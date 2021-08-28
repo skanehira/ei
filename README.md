@@ -1,11 +1,11 @@
-![GitHub Repo stars](https://img.shields.io/github/stars/skanehira/go-cli-template?style=social)
-![GitHub](https://img.shields.io/github/license/skanehira/go-cli-template)
-![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/skanehira/go-cli-template)
-![GitHub all releases](https://img.shields.io/github/downloads/skanehira/go-cli-template/total)
-![GitHub CI Status](https://img.shields.io/github/workflow/status/skanehira/go-cli-template/ci?label=CI)
-![GitHub Release Status](https://img.shields.io/github/workflow/status/skanehira/go-cli-template/Release?label=release)
+![GitHub Repo stars](https://img.shields.io/github/stars/skanehira/ei?style=social)
+![GitHub](https://img.shields.io/github/license/skanehira/ei)
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/skanehira/ei)
+![GitHub all releases](https://img.shields.io/github/downloads/skanehira/ei/total)
+![GitHub CI Status](https://img.shields.io/github/workflow/status/skanehira/ei/ci?label=CI)
+![GitHub Release Status](https://img.shields.io/github/workflow/status/skanehira/ei/Release?label=release)
 
-# go-cli-template
+# ei
 This is template that help you to quick implement some CLI using Go.
 
 This repository is contains following.
