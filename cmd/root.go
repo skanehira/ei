@@ -32,8 +32,10 @@ func Execute() {
 		}
 
 		current := console.Current()
-		current.DisableEcho()
-		defer current.Reset()
+		_ = current.DisableEcho()
+		defer func() {
+			_ = current.Reset()
+		}()
 
 		if err := current.SetRaw(); err != nil {
 			exitError(err)
