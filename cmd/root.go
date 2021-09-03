@@ -41,7 +41,7 @@ func Execute() {
 
 		term := terminal.NewTerminal(current, "")
 
-		c := exec.Command(args[0], args[0:]...)
+		c := exec.Command(args[0], args[1:]...)
 		ptmx, err := pty.Start(c)
 		if err != nil {
 			exitError(err)
