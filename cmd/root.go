@@ -3,11 +3,12 @@ package cmd
 import (
 	"fmt"
 	"io"
+	"log"
 	"os"
 	"os/exec"
 
 	"github.com/containerd/console"
-	"github.com/kr/pty"
+	"github.com/creack/pty"
 	"github.com/spf13/cobra"
 	"golang.org/x/crypto/ssh/terminal"
 )
@@ -32,13 +33,16 @@ func Execute() {
 		}
 
 		current := console.Current()
-		_ = current.DisableEcho()
+		if err := current.DisableEcho(); err != nil {
+			exitError(err)
+		}
 		defer func() {
 			_ = current.Reset()
 		}()
 
 		if err := current.SetRaw(); err != nil {
-			exitError(err)
+			log.Println(err)
+			return
 		}
 
 		term := terminal.NewTerminal(current, "")
@@ -46,7 +50,8 @@ func Execute() {
 		c := exec.Command(args[0], args[1:]...)
 		ptmx, err := pty.Start(c)
 		if err != nil {
-			exitError(err)
+			log.Println(err)
+			return
 		}
 
 		go func() {
