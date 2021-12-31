@@ -10,7 +10,7 @@ import (
 	"github.com/containerd/console"
 	"github.com/creack/pty"
 	"github.com/spf13/cobra"
-	"golang.org/x/crypto/ssh/terminal"
+	terminal "golang.org/x/term"
 )
 
 var rootCmd = &cobra.Command{
