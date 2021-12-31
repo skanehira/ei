@@ -5,8 +5,8 @@
 ![GitHub CI Status](https://img.shields.io/github/workflow/status/skanehira/ei/ci?label=CI)
 ![GitHub Release Status](https://img.shields.io/github/workflow/status/skanehira/ei/Release?label=release)
 
-# ei - Extend input
-`ei` is a small utility for extend inputs on the terminal.
+# ei - Extend Terminal input
+`ei` is a small utility for extend terminal input that supports control sequences.
 
 ## Author
 skanehira
