@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/containerd/console v1.0.3
 	github.com/creack/pty v1.1.17
-	github.com/spf13/cobra v1.3.0
+	github.com/spf13/cobra v1.5.0
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211
 )
 
